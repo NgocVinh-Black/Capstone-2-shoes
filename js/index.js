@@ -11,8 +11,6 @@ function getDataItem() {
       arrItem = result.data.content;
       console.log(arrItem);
       renderDataItem(result.data.content);
-      // var itemMoi = new
-      // document.querySelector('.gallery_product-gallery').innerHTML = result.data.content;
     })
     .catch(function (error) {
       console.log(error);
