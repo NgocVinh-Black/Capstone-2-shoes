@@ -9,7 +9,6 @@ function getDataItem() {
   promise
     .then(function (result) {
       arrItem = result.data.content;
-      console.log(arrItem);
       renderDataItem(result.data.content);
     })
     .catch(function (error) {
@@ -26,32 +25,44 @@ function renderDataItem(arr) {
   for (let i = 0; i < arr.length; i++) {
     var item_SP = arr[i];
     content += `
-    <div class="item">
-                  <div class="item_top">
-                    <img src="${item_SP.image}" alt="">
-                  </div>
-                  <div class="product_group">
-                  <div class="item_bot">
-                    <div class="product">
-                      <h3>${item_SP.name}</h3>
-                      <p><i class="fa-solid fa-dollar-sign"></i>${item_SP.price}</p>
-                    </div>
-                    <div class="shopping">
-                      <i class="fa-solid fa-cart-shopping"></i>
-                    </div>
-                  </div>
-                  <div class="ratings">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                  </div>
-                  </div>
-                  
-                </div>
+    <div class="">
+    <div class="item_product-gallery">
+      <!-- call api -->
+      <div class="item">
+        <div class="item_top">
+          <img src="${item_SP.image}" alt="">
+        </div>
+        <div class="product_group">
+          <div class="name_item">
+            <h3>${item_SP.name}</h3>
+          </div>
+          <div class="price_shop">
+            <div class="price">
+              <p><i class="fa-solid fa-dollar-sign"></i>${item_SP.price}.00</p>
+            </div>
+            <div class="shopping">
+              <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+          </div>
+        <div class="ratings_buy">
+          <div class="ratings">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <div class="buy">
+            <a href="./../pages/detail.html?productid=${item_SP.id}">Buy now</a>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+      </div>
+      
+    </div>
         `;
   }
-  // console.log(content);
-  document.querySelector(".item_product-gallery").innerHTML = content;
+  document.querySelector(".gallery_product-gallery").innerHTML = content;
 }

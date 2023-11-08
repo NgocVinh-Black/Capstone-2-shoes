@@ -58,59 +58,69 @@
     />
 
     <!-- my css -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/detail.css" />
   </head>
 
   <body>
-    <header class="header-area header-transparent">
+    <!-- header register start -->
+    <header class="header-area">
+      <!-- main header start -->
       <div class="main-header d-none d-lg-block">
-        <div class="header-top">
+        <!-- header top start -->
+        <div class="header-top black-bg">
           <div class="container">
             <div class="row align-items-center">
-              <div class="nav-left col-lg-3">
-                <div class="header-social-link">
-                  <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                  <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+              <div class="col-lg-6">
+                <div class="top-left-navigation">
+                  <div class="header-social-link">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                  </div>
                 </div>
               </div>
-              <div class="nav-right col-lg-9 d-flex justify-content-end">
+              <div class="col-lg-6 d-flex justify-content-end">
                 <ul class="user-info-block">
                   <li>
-                    <a href="#">
-                      <i class="fa-solid fa-circle-user"></i>My Account
-                    </a>
+                    <a href="my-account.html"
+                      ><i class="fa fa-user-circle"></i> My Account</a
+                    >
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fa-regular fa-credit-card"></i>Checkout
-                    </a>
+                    <a href="checkout.html"
+                      ><i class="fa fa-credit-card"></i> Checkout</a
+                    >
                   </li>
                   <li>
-                    <a href="#">
-                      <i class="fa-solid fa-right-to-bracket"></i>Sign In
-                    </a>
+                    <a href="login-register.html"
+                      ><i class="fa fa-sign-in"></i> Sign In</a
+                    >
                   </li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
-        <div class="header-main-area sticky">
+        <!-- header top end -->
+
+        <!-- header middle area start -->
+        <div class="header-main-area black-soft sticky">
           <div class="container">
             <div class="row align-items-center position-relative">
-              <!-- logo -->
+              <!-- start logo area -->
               <div class="col-auto">
                 <div class="logo">
-                  <a href="#">
-                    <img src="./image/logo.png" alt="Brand Logo" />
+                  <a href="index.html">
+                    <img src="../image/logo.png" alt="Brand Logo" />
                   </a>
                 </div>
               </div>
+              <!-- start logo area -->
 
-              <!-- main menu -->
-              <div class="col-auto position-static ms-auto">
+              <!-- main menu area start -->
+              <div class="col-auto position-static">
                 <div class="main-menu-area">
                   <div class="main-menu">
                     <nav class="desktop-menu">
@@ -224,182 +234,244 @@
                   </div>
                 </div>
               </div>
+              <!-- main menu area end -->
 
-              <!-- mini cart -->
+              <!-- mini cart area start -->
               <div class="col-auto ms-auto">
                 <div class="header-right">
                   <div class="header-configure-area">
                     <ul class="nav">
                       <li>
-                        <a href="#" class="search-trigger">
-                          <i class="fa-solid fa-magnifying-glass"></i>
-                        </a>
+                        <a href="#" class="search-trigger"
+                          ><i class="fa fa-search"></i
+                        ></a>
                       </li>
-
                       <li class="mini-cart-wrap">
                         <a href="#" class="minicart-btn">
-                          <i class="fa-solid fa-cart-shopping"></i>
+                          <i class="fa fa-shopping-cart"></i>
                           <span class="notification">2</span>
                         </a>
                         <div class="cart-list-wrapper">
                           <ul class="cart-list">
-                            <!-- list 1 -->
                             <li>
                               <div class="cart-img">
-                                <a href="">
-                                  <img src="./image/cart-1.jpg" alt="" />
-                                </a>
+                                <a href="product-details.html"
+                                  ><img src="../image/cart-1.jpg" alt=""
+                                /></a>
                               </div>
                               <div class="cart-info">
                                 <h6 class="product-name">
-                                  <a href="">Generation Classic</a>
+                                  <a href="product-details.html"
+                                    >7th Generation classic</a
+                                  >
                                 </h6>
                                 <span class="cart-qty">Qty: 1</span>
                                 <span class="item-price">$60.00</span>
                               </div>
                               <div class="del-icon">
-                                <i class="fa-solid fa-xmark"></i>
+                                <i class="fa fa-times"></i>
                               </div>
                             </li>
-
-                            <!-- list 2 -->
                             <li>
                               <div class="cart-img">
-                                <a href="">
-                                  <img src="./image/cart-2.jpg" alt="" />
-                                </a>
+                                <a href="product-details.html"
+                                  ><img src="../image/cart-2.jpg" alt=""
+                                /></a>
                               </div>
                               <div class="cart-info">
                                 <h6 class="product-name">
-                                  <a href="">Generation Classic</a>
+                                  <a href="product-details.html"
+                                    >Digital 8th generation</a
+                                  >
                                 </h6>
-                                <span class="cart-qty">Qty: 1</span>
-                                <span class="item-price">$60.00</span>
+                                <span class="cart-qty">Qty: 2</span>
+                                <span class="item-price">$70.00</span>
                               </div>
                               <div class="del-icon">
-                                <i class="fa-solid fa-xmark"></i>
+                                <i class="fa fa-times"></i>
                               </div>
                             </li>
                           </ul>
+                          <ul class="minicart-pricing-box">
+                            <li>
+                              <span>Sub-Total</span>
+                              <span><strong>$300.00</strong></span>
+                            </li>
+                            <li>
+                              <span>Eco Tax (-2.00)</span>
+                              <span><strong>$10.00</strong></span>
+                            </li>
+                            <li>
+                              <span>VAT (20%)</span>
+                              <span><strong>$60.00</strong></span>
+                            </li>
+                            <li class="total">
+                              <span>Total</span>
+                              <span><strong>$370.00</strong></span>
+                            </li>
+                          </ul>
+                          <div class="minicart-button">
+                            <a href="cart.html"
+                              ><i class="fa fa-shopping-cart"></i> View Cart</a
+                            >
+                            <a href="cart.html"
+                              ><i class="fa fa-share"></i> Checkout</a
+                            >
+                          </div>
                         </div>
                       </li>
                     </ul>
                   </div>
                 </div>
               </div>
+              <!-- mini cart area end -->
             </div>
+          </div>
+        </div>
+        <!-- header middle area end -->
+      </div>
+      <!-- main header start -->
 
-            <!-- mini cart area -->
-            <div class="col-auto ms-auto"></div>
+    
+
+            
+          </div>
+        </div>
+      </aside>
+      <!-- off-canvas menu end -->
+      <!-- offcanvas mobile menu end -->
+    </header>
+    <!-- header register end -->
+
+    <main>
+    <!-- banner register start -->
+      <div class="reg-banner reg-img bg-img" style="background-image: url(../image/shop.jpg);">
+        <div class="container">
+          <div class="row"></div>
+          <div class="col-12">
+            <div class="reg-wrap">
+              <h3 class="reg-title">LOGIN REGISTER</h3>
+              <ul class="justify-content-center">
+                <li class="reg-item">
+                  <a href="../index.html">
+                    <i class="fa-solid fa-house-chimney"></i>
+                  </a>
+                </li>
+                <li class="reg-item active">
+                  &nbsp;&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;&nbsp;Product Details
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
-    </header>
 
-    <main>
-      <!--banner slider -->
-      <section class="hero-slider">
-        <div
-          class="hero-slider-active slick-arrow-style slick-arrow-style_hero"
-        >
-          <div class="slick-list">
-            <div class="slick-track">
-              <div class="slick-slide slick-current slick-active">
-                <div>
-                  <div class="hero-single-slide hero-overlay">
-                    <div
-                      class="hero-slider-item bg-img"
-                      style="background-image: url('./image/home2-slide1.jpg')"
-                    >
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div
-                              class="hero-slider-content content-top slide-1"
-                            >
-                              <h2 class="slide-title">New</h2>
-                              <h3 class="slide-subtitle">
-                                Sports Sneakers<br />
-                                <span>Men's like Flex</span>
-                              </h3>
-                              <a href="#" class="btn btn-large">Shop Now</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+    <!-- banner register end -->
+
+    <!-- login register start -->
+    
+    <!-- login register end -->
+    <!-- detail item -->
+    <section class="detail_item">
+      <div class="container">
+        <div class="demo_detail_vinh">
+          <!-- <div class="content_detail">
+            <div class="left_content">
+              <div class="img_top">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgPvT6j0n04uI7Ovd_LME3vPadEKOkWoR7g&usqp=CAU" alt="">
+              </div>
+              <div class="img_bot">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgPvT6j0n04uI7Ovd_LME3vPadEKOkWoR7g&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgPvT6j0n04uI7Ovd_LME3vPadEKOkWoR7g&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgPvT6j0n04uI7Ovd_LME3vPadEKOkWoR7g&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgPvT6j0n04uI7Ovd_LME3vPadEKOkWoR7g&usqp=CAU" alt="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbgPvT6j0n04uI7Ovd_LME3vPadEKOkWoR7g&usqp=CAU" alt="">
+              </div>
+            </div>
+            <div class="right_content">
+              <h2>Name</h2>
+              <div class="start_reviews">
+                <div class="start">
+                  <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="reviews">
+                  <p>Reviews</p>
                 </div>
               </div>
-              <div class="slick-slide">
-                <div>
-                  <div class="hero-single-slide hero-overlay">
-                    <div
-                      class="hero-slider-item bg-img"
-                      style="background-image: url('./image/home2-slide2.jpg')"
-                    >
-                      <div class="container">
-                        <div class="row">
-                          <div class="col-md-12">
-                            <div
-                              class="hero-slider-content content-top slide-2"
-                            >
-                              <h2 class="slide-title">Sale</h2>
-                              <h3 class="slide-subtitle">
-                                Running Sneakers<br />
-                                <span>Men's like Flex</span>
-                              </h3>
-                              <a href="#" class="btn btn-large">Shop Now</a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="price">
+                <i class="fa-solid fa-dollar-sign"></i>30
+              </div>
+              <div class="size">
+                <p>34</p>
+              </div>
+              <div class="description">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, exercitationem.</p>
+              </div>
+              <div class="add">
+                <button class="add_to_cart">Add To Cart</button>
+              </div>
+              <div class="social">
+                <div class="social_fb">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <p>Like</p>
                 </div>
+                <div class="social_tw">
+                  <i class="fa-brands fa-twitter"></i>
+                  <p>Tweet</p>
+                </div>
+                <div class="social_S">
+                  <i class="fa-brands fa-pinterest"></i>
+                  <p>Save</p>
+                </div>
+                <div class="social_gg">
+                  <i class="fa-brands fa-google-plus-g"></i>
+                  <p>Share</p>
+                </div>
+              </div>
+            </div>
+          </div> -->
+        </div>
+      </div>
+    </section>
+
+    <section class="Description_detail">
+      <div class="container">
+        <div class="content_description">
+          <h3>Description</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque sequi fuga, perspiciatis tempora, asperiores provident doloremque rem vero autem distinctio ipsum? Architecto debitis praesentium suscipit, ducimus voluptatibus hic? Praesentium sit placeat earum labore delectus atque deserunt nesciunt ipsa, officiis sapiente quae sequi dolorum laudantium quisquam harum dignissimos temporibus fugit magnam?</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-gallery">
+      <div class="container">
+        <div class="title_product-gallery">
+          <h2>OUR IN STORE</h2>
+          <p>
+            Investigationes demonstraverunt lectores legere me lius quod ii
+            legunt saepius <br />
+            claritas est etiam processus dynamicus, qui sequitur mutationem.
+          </p>
+        </div>
+        <div class="gallery_product-gallery">
+          <div class="div4_2 ">
+            <div class="item_product-gallery slick-4-2">
+
               </div>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-      
-
-      <!-- detail product -->
-      <section class="detail product">
-        <div class="detail_new">
-            div.
-        </div>
-      </section>
-      <!-- product-gallery -->
-      <section class="product-gallery">
-        <div class="container">
-          <div class="title_product-gallery">
-            <h2>OUR IN STORE</h2>
-            <p>
-              Investigationes demonstraverunt lectores legere me lius quod ii
-              legunt saepius <br />
-              claritas est etiam processus dynamicus, qui sequitur mutationem.
-            </p>
-          </div>
-          <div class="gallery_product-gallery">
-            <div class="div4_2 ">
-              <div class="item_product-gallery slick-4-2">
-                <!-- call api -->
-                
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- banner-statistics-bottom -->
-      <!-- testimonials -->
-      <!-- blog -->
+    <!--  -->
     </main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
+    
+
     <!-- Bootstrap JavaScript Libraries -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
@@ -436,61 +508,6 @@
       referrerpolicy="no-referrer"
     ></script>
 
-    <script>
-      $(document).ready(function () {
-        $(".slick-track").slick({
-          slidesToShow: 1,
-          infinite: true,
-          slidesToScroll: 1,
-          dots: false,
-          accessibility: true,
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            480: {
-              items: 1,
-            },
-            667: {
-              items: 1,
-            },
-            1000: {
-              items: 1,
-            },
-          },
-        });
-      });
-    </script>
-
-<script>
-  $(document).ready(function () {
-    $(".slick-4-2").slick({
-      slidesToShow: 4,
-      rows: 2,
-      infinite: true,
-      slidesToScroll: 1,
-      dots: false,
-      accessibility: true,
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        480: {
-          items: 1,
-        },
-        667: {
-          items: 1,
-        },
-        1000: {
-          items: 1,
-        },
-      },
-    });
-  });
-</script>
-
     <!-- wow js -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"
@@ -502,15 +519,15 @@
       new WOW().init();
     </script>
 
-        <!-- axios sdn -->
-        <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
-        integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      ></script>
-  
-      <!-- js -->
-      <script src="./index.js"></script>
+    <!-- axios sdn -->
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+    integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+
+    <script src="../js/detail.js"></script>
+    <!-- <script src="../js/index.js"></script> -->
   </body>
 </html>
