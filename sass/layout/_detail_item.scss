@@ -2,21 +2,16 @@
   .demo_detail_vinh {
     .content_detail {
       display: flex;
+      justify-content: space-around;
       margin-top: 80px;
       .left_content {
         margin-right: 15px;
         .img_top {
           img {
-            width: 700px;
-            height: 525px;
-          }
-        }
-        .img_bot {
-          display: flex;
-          justify-content: space-between;
-          margin-top: 20px;
-          img {
-            width: 120px;
+            width: 100%;
+            height: 500px;
+            background-color: #f3f3f3;
+            border-top: 2px solid #e5e5e5;
           }
         }
       }
@@ -85,6 +80,7 @@
         .social {
           display: flex;
           justify-content: space-around;
+          gap: 10px;
           align-items: center;
           margin-top: 10px;
           border-top: 1px solid rgb(155, 152, 152, 0.5);

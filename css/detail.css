@@ -49,6 +49,10 @@
   display: inline-block;
   line-height: 1;
   margin-left: 20px;
+  transition: all 0.4s;
+}
+.header-area .main-header .header-top .top-left-navigation .header-social-link a:hover {
+  color: #87b106;
 }
 .header-area .main-header .header-top ul.user-info-block {
   margin-left: 40px;
@@ -66,6 +70,10 @@
   color: #999;
   font-size: 14px;
   text-decoration: none;
+  transition: all 0.4s;
+}
+.header-area .main-header .header-top ul.user-info-block li a:hover {
+  color: #87b106;
 }
 .header-area .main-header .black-bg {
   background-color: #1a1a1a;
@@ -377,22 +385,17 @@
 
 .detail_item .demo_detail_vinh .content_detail {
   display: flex;
+  justify-content: space-around;
   margin-top: 80px;
 }
 .detail_item .demo_detail_vinh .content_detail .left_content {
   margin-right: 15px;
 }
 .detail_item .demo_detail_vinh .content_detail .left_content .img_top img {
-  width: 700px;
-  height: 525px;
-}
-.detail_item .demo_detail_vinh .content_detail .left_content .img_bot {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-.detail_item .demo_detail_vinh .content_detail .left_content .img_bot img {
-  width: 120px;
+  width: 100%;
+  height: 500px;
+  background-color: #f3f3f3;
+  border-top: 2px solid #e5e5e5;
 }
 .detail_item .demo_detail_vinh .content_detail .right_content {
   padding-left: 15px;
@@ -456,6 +459,7 @@
 .detail_item .demo_detail_vinh .content_detail .right_content .social {
   display: flex;
   justify-content: space-around;
+  gap: 10px;
   align-items: center;
   margin-top: 10px;
   border-top: 1px solid rgba(155, 152, 152, 0.5);
