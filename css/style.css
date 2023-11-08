@@ -314,11 +314,9 @@ header .main-header .header-main-area .header-right .header-configure-area ul.na
   display: block;
 }
 .hero-slider .hero-slider-active .slick-list .slick-track .hero-slider-item {
-  height: 900px;
+  height: 730px;
   display: flex;
   align-items: center;
-}
-.hero-slider .hero-slider-active .slick-list .slick-track.bg_img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

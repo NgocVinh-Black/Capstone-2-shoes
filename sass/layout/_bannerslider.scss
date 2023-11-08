@@ -9,15 +9,12 @@
                 display: block;
 
                 .hero-slider-item {
-                    height: 900px;
+                    height: 730px;
                     display: flex;
                     align-items: center;
-                }
-
-                &.bg_img {
                     background-size: cover;
                     background-position: center;
-                    background-repeat: no-repeat;      
+                    background-repeat: no-repeat;   
                 }
 
                 .hero-slider-content {
