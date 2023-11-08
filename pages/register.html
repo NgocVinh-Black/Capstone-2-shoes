@@ -406,36 +406,36 @@
                   <div class="col-lg-6">
                       <div class="login-reg-form-wrap sign-up-form">
                           <h4>Register Form</h4>
-                          <form action="#" method="post">
+                          <form id="registrationForm" action="#" method="post">
                               <div class="single-input-item">
-                                  <input type="text" placeholder="Full Name" required="">
+                                  <input id="name" type="text" placeholder="Full Name" required="">
                               </div>
                               <div class="single-input-item">
-                                  <input type="email" placeholder="Enter your Email" required="">
+                                  <input id="email" type="email" placeholder="Enter your Email" required="">
                               </div>
                               <div class="single-input-item">
-                                <input type="phone" placeholder="Enter your Phone Number" required="">
+                                <input id="phone" type="text" placeholder="Enter your Phone Number" required="">
                             </div>
                               <div class="row">
                                   <div class="col-lg-6">
                                       <div class="single-input-item">
-                                          <input type="password" placeholder="Enter your Password" required="">
+                                          <input id="password" type="password" placeholder="Enter your Password" required="">
                                       </div>
                                   </div>
                                   <div class="col-lg-6">
                                       <div class="single-input-item">
-                                          <input type="password" placeholder="Repeat your Password" required="">
+                                          <input id="passwordRepeat" type="password" placeholder="Repeat your Password" required="">
                                       </div>
                                   </div>
                               </div>
                               <div class="row check-gender">
                                 <div class="col-lg-6">
-                                    <h5>Gender</h5>
+                                    <h5 id="gender">Gender</h5>
                                 </div>
                                 <div class="col-lg-6 form-gender mt-4 mt-md-0">
-                                  <input type="radio" id="male" name="gender" value="male">
+                                  <input type="radio" id="male" name="gender" value="true">
                                   <label for="male">Male</label>
-                                  <input type="radio" id="female" name="gender" value="female">
+                                  <input type="radio" id="female" name="gender" value="false">
                                   <label for="male">Female</label>
                                 </div>
                               </div>
@@ -447,9 +447,10 @@
                                 </div>
                               </div>
                               <div class="single-input-item">
-                                  <button class="btn btn-sqr">Register</button>
+                                  <button class="btn btn-sqr" type="button" onclick="registerUser()">Register</button>
                               </div>
                           </form>
+                          <p id="responseMessage"></p>
                       </div>
                   </div>
                   <!-- Register Content End -->
@@ -534,6 +535,15 @@
     <script>
       new WOW().init();
     </script>
+
+    
+        <!-- axios cdn -->
+        <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"
+        integrity="sha512-WrdC3CE9vf1nBf58JHepuWT4x24uTacky9fuzw2g/3L9JkihgwZ6Cfv+JGTtNyosOhEmttMtEZ6H3qJWfI7gIQ=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      ></script>
 
     <script src="../js/register.js"></script>
   </body>
