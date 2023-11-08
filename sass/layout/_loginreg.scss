@@ -10,7 +10,9 @@
         padding: 23px 30px 30px;
 
         h4 {
-            font-size: $fs_4;
+            font-size: $fs_6;
+            font-weight: $fw_700;
+            color: $color_gray_2;
         }
 
         .single-input-item {
@@ -53,6 +55,12 @@
                 border-radius: 5px;
                 background-color: $color_green_1;
                 padding: 13px 25px;
+                transition: all 0.4s;
+
+                &:hover {
+                    background-color: #282828;
+                    color: $color_green_1;
+                }
             }
 
             .login-reg-form-meta {
@@ -81,8 +89,22 @@
                 margin-bottom: 0;
                 font-size: $fs_1;
             }
-            
-            }
+        }
 
+        .form-check {
+            color: $color_black_1;
+            text-transform: capitalize;
+            font-size: $fs_1;
+            padding-left: 0;
+            padding-top: 20px;
+        }
+
+        }
+
+        p {
+            color: $color_black_1;
+            text-transform: capitalize;
+            font-size: $fs_2;
+            padding-top: 20px;
         }
     }

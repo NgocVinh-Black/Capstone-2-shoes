@@ -393,7 +393,9 @@
   padding: 23px 30px 30px;
 }
 .login-register-wrapper .login-reg-form-wrap h4 {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: #555555;
 }
 .login-register-wrapper .login-reg-form-wrap .single-input-item {
   margin-top: 20px;
@@ -428,6 +430,11 @@
   border-radius: 5px;
   background-color: #87b106;
   padding: 13px 25px;
+  transition: all 0.4s;
+}
+.login-register-wrapper .login-reg-form-wrap .single-input-item .btn-sqr:hover {
+  background-color: #282828;
+  color: #87b106;
 }
 .login-register-wrapper .login-reg-form-wrap .single-input-item .login-reg-form-meta a {
   color: #87b106;
@@ -447,4 +454,17 @@
 .login-register-wrapper .login-reg-form-wrap .check-gender h5 {
   margin-bottom: 0;
   font-size: 14px;
+}
+.login-register-wrapper .login-reg-form-wrap .form-check {
+  color: #222222;
+  text-transform: capitalize;
+  font-size: 14px;
+  padding-left: 0;
+  padding-top: 20px;
+}
+.login-register-wrapper p {
+  color: #222222;
+  text-transform: capitalize;
+  font-size: 16px;
+  padding-top: 20px;
 }/*# sourceMappingURL=register.css.map */
