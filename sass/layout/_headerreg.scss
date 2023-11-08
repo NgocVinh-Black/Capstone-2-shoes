@@ -12,7 +12,12 @@
                         font-size: $fs_3;
                         display: inline-block;
                         line-height: 1;
-                        margin-left: 20px;  
+                        margin-left: 20px;
+                        transition: all 0.4s;
+
+                        &:hover {
+                            color: $color_green_1;
+                        }
                     }
                 }
             }
@@ -35,6 +40,11 @@
                             color: $color_gray_4;
                             font-size: $fs_1;
                             text-decoration: none;
+                            transition: all 0.4s;
+                            
+                            &:hover {
+                                color: $color_green_1;
+                            }
                         }
                     }
                 }

@@ -13,27 +13,27 @@
             content: "";
             z-index: -1;
             position: absolute;
-            transition: 0.4s;
+            transition: all 0.4s;
+            background-image: url(../../image/home2-slide2copy.jpg);
+            background-repeat: no-repeat;
+            border-radius: 5px;
+        }
+
+        &::after {
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            content: "";
+            z-index: -1;
+            position: absolute;
+            transition: all 0.4s;
             background-image: url(../../image/cat-bg.png);
             background-repeat: no-repeat;
             border-radius: 5px;
         }
 
-        // &::after {
-        //     top: 0;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 100%;
-        //     content: "";
-        //     z-index: -1;
-        //     position: absolute;
-        //     transition: 0.4s;
-        //     background-image: url(../../image/home2-slide2copy.jpg);
-        //     background-repeat: no-repeat;
-        //     border-radius: 5px;
-        // }
-
-        &:hover::before {
+        &:hover::after {
             opacity: 0;
             visibility: hidden;
         }
@@ -61,7 +61,7 @@
 
             img {
                 max-width: 100%;
-                transition: all 0.4s;
+                transition: all 0.5s;
                 vertical-align: middle;
             }
         }
