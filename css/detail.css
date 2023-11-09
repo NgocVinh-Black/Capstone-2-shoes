@@ -37,6 +37,17 @@
   max-width: 1200px;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-padding {
+    padding: 63px 0 !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-widget-area {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
 .header-area .main-header .header-top {
   padding: 6px 0;
 }
@@ -49,6 +60,10 @@
   display: inline-block;
   line-height: 1;
   margin-left: 20px;
+  transition: all 0.4s;
+}
+.header-area .main-header .header-top .top-left-navigation .header-social-link a:hover {
+  color: #87b106;
 }
 .header-area .main-header .header-top ul.user-info-block {
   margin-left: 40px;
@@ -66,6 +81,10 @@
   color: #999;
   font-size: 14px;
   text-decoration: none;
+  transition: all 0.4s;
+}
+.header-area .main-header .header-top ul.user-info-block li a:hover {
+  color: #87b106;
 }
 .header-area .main-header .black-bg {
   background-color: #1a1a1a;

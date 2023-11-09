@@ -73,22 +73,7 @@
 
     .slick-arrow-style {
         
-        .slick-prev, .slick-next {
-            font-size: 0;
-            line-height: 0;
-            position: absolute;
-            top: 50%;
-            display: block;
-            width: 20px;
-            height: 20px;
-            padding: 0;
-            transform: translate(0, -50%);
-            cursor: pointer;
-            color: transparent;
-            border: none;
-            outline: none;
-            background: transparent;
-        }
+        
 
         button {
             border: none;
@@ -97,6 +82,23 @@
             padding: 0;
             box-shadow: none;
             transition: all 0.4s;
+
+            &.slick-prev, &.slick-next {
+                font-size: 0;
+                line-height: 0;
+                position: absolute;
+                top: 50%;
+                display: block;
+                width: 20px;
+                height: 20px;
+                padding: 0;
+                transform: translate(0, -50%);
+                cursor: pointer;
+                color: transparent;
+                border: none;
+                outline: none;
+                background: transparent;
+            }
         
 
             &.slick-arrow {
@@ -124,7 +126,7 @@
 
                 &.slick-next {
                     left: auto;
-                    right: 0;
+                    right: 30px;
                 }
 
                 &:hover {
@@ -154,7 +156,18 @@
                 border-radius: 50%;
                 line-height: 50px;
                 z-index: 1;
+
+                &.slick-next {
+                    right: 0;
+                }
+
+                &:hover {
+                    background-color: $color_green_1;
+                    color: $color_white_1;
+
+                }
             }
         }
     }
 }
+
