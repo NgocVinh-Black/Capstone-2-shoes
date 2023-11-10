@@ -22,7 +22,7 @@
             @media screen and (max-width: 992px) {
               width: 100%;
             }
-            @media screen and (max-width: 576px){
+            @media screen and (max-width: 576px) {
               width: 100%;
             }
           }
@@ -55,15 +55,16 @@
           font-weight: $fw_700;
           margin-bottom: 15px;
         }
-        .size {
-          width: 50px;
-          height: 50px;
-          text-align: center;
-          line-height: 50px;
-          margin-right: 10px;
-          border-radius: 10%;
-          background-color: #eaeaea;
-          p {
+        .size_detail {
+          display: flex;
+          .size {
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            line-height: 50px;
+            margin-right: 10px;
+            border-radius: 10%;
+            background-color: #eaeaea;
             font-size: $fs_3;
           }
         }
@@ -98,7 +99,7 @@
           margin-top: 10px;
           border-top: 1px solid rgb(155, 152, 152, 0.5);
           padding-top: 30px;
-          @media screen and (max-width: 992px){
+          @media screen and (max-width: 992px) {
             justify-content: start;
           }
           .social_fb {
@@ -163,7 +164,7 @@
   }
 }
 .Description_detail {
-  @media screen and (max-width: 992px){
+  @media screen and (max-width: 992px) {
     padding: 0 100px;
   }
   .content_description {

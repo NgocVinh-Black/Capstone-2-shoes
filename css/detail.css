@@ -463,7 +463,10 @@
   font-weight: 700;
   margin-bottom: 15px;
 }
-.detail_item .demo_detail_vinh .content_detail .right_content .size {
+.detail_item .demo_detail_vinh .content_detail .right_content .size_detail {
+  display: flex;
+}
+.detail_item .demo_detail_vinh .content_detail .right_content .size_detail .size {
   width: 50px;
   height: 50px;
   text-align: center;
@@ -471,8 +474,6 @@
   margin-right: 10px;
   border-radius: 10%;
   background-color: #eaeaea;
-}
-.detail_item .demo_detail_vinh .content_detail .right_content .size p {
   font-size: 17px;
 }
 .detail_item .demo_detail_vinh .content_detail .right_content .description p {
