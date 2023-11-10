@@ -712,12 +712,13 @@ header .main-header .header-main-area .header-right .header-configure-area ul.na
   padding: 14px 0 0;
 }
 .product-gallery .gallery_product-gallery {
-  justify-content: space-around;
+  justify-content: center;
 }
 .product-gallery .gallery_product-gallery .item_product-gallery {
   margin-bottom: 15px;
 }
 .product-gallery .gallery_product-gallery .item_product-gallery .item {
+  margin: 20px 0;
   width: 100%;
   border: 1px solid #e5e5e5;
   text-align: left;

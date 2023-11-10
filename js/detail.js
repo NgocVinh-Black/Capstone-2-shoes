@@ -114,7 +114,7 @@ function renderDataItem(arr) {
   for (let i = 0; i < arr.length; i++) {
     var item_SP = arr[i];
     content += `
-    <div class="col-3">
+    <div class="col-xl-3 col-lg-4 col-sm-6">
     <div class="item_product-gallery">
       <!-- call api -->
       <div class="item">

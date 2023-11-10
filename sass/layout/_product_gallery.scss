@@ -18,10 +18,11 @@
     }
   }
   .gallery_product-gallery {
-    justify-content: space-around;
+    justify-content: center;
     .item_product-gallery {
       margin-bottom: 15px;
       .item {
+        margin: 20px 0;
         width: 100%;
         border: 1px solid #e5e5e5;
         text-align: left;
