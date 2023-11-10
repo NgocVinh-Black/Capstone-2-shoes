@@ -72,6 +72,11 @@
     font-size: 16px !important;
   }
 }
+@media only screen and (max-width: 1133px) {
+  .service .policy-cont {
+    font-size: 13px !important;
+  }
+}
 @media only screen and (max-width: 767px) {
   .footer-widget-area {
     padding-top: 60px;

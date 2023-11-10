@@ -80,6 +80,16 @@
 // banner-statistics end
 
 
+// service start
+@media only screen and (max-width: 1133px) {
+    .service {
+        .policy-cont {
+            font-size: 13px !important;
+        }
+    }
+}
+// service end
+
 //   footer start
 @media only screen and (max-width: 767px) {
     .footer-widget-area {
