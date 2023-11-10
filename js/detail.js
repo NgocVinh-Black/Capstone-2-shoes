@@ -24,7 +24,7 @@ window.onload = function () {
   // hiển thị lên giao diện
   function renderDataItemDetail(arr) {
     var content = "";
-    console.log(arr)
+    console.log(arr);
     content += `
     <div class="content_detail">
     <div class="left_content">
@@ -50,8 +50,12 @@ window.onload = function () {
       <div class="price">
         <i class="fa-solid fa-dollar-sign"></i>${arr.price}.00
       </div>
-      <div class="size">
-        <p>${arr.size}</p>
+      <div class="size_detail">
+        ${arr.size
+          .map((item) => {
+            return `<div class="size">${item}</div>`;
+          })
+          .join("")}
       </div>
       <div class="description">
         <p>${arr.shortDescription}</p>
