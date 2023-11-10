@@ -25,7 +25,7 @@ function renderDataItem(arr) {
   for (let i = 0; i < arr.length; i++) {
     var item_SP = arr[i];
     content += `
-    <div class="">
+    <div class="col-3" style="margin-bottom: 15px; overflow-wrap: break-word">
     <div class="item_product-gallery">
       <!-- call api -->
       <div class="item">

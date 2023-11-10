@@ -1,12 +1,14 @@
 // product-gallery
 .product-gallery {
   text-align: center;
+  padding-bottom: 50px;
+  background-color: #ddefa5;
   .title_product-gallery {
     h2 {
       font-weight: $fw_900;
-      font-size: $fs_5;
+      font-size: $fs_6;
       color: $color_black_1;
-      margin-top: 80px;
+      padding-top: 80px;
       line-height: 1.2;
     }
     p {
@@ -16,31 +18,34 @@
     }
   }
   .gallery_product-gallery {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px;
-    @media screen and (max-width: 992px) {
-      grid-template-columns: 1fr 1fr 1fr;
-      gap: 10px;
-    }
-    @media screen and (max-width: 576px) {
-      grid-template-columns: 1fr 1fr;
-      gap: 10px;
-    }
+    justify-content: space-around;
     .item_product-gallery {
+      margin-bottom: 15px;
       .item {
         width: 100%;
         border: 1px solid #e5e5e5;
         text-align: left;
+        background-image: url(../../image/cat-bg.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        transition: all 0.5s;
+        &:hover {
+          transform: scale(1.1);
+          cursor: pointer;
+        }
+        &:hover img {
+          border-color: $color_green_1;
+          background-image: url(../../image/home2-slide2copy.jpg);
+        }
         .item_top {
           img {
             width: 100%;
-            background-color: #f3f3f3;
           }
         }
         .product_group {
           background-color: #fff;
-          padding: 26px 10px 28px 10px;
+          padding: 26px 10px 28px 8px;
           border-top: 1px solid #e5e5e5;
           .name_item {
             h3 {
@@ -49,7 +54,8 @@
               font-size: 15px;
               color: $color_black_1;
               line-height: 1.2;
-              text-overflow: ellipsis;
+              text-overflow: clip;
+              overflow: hidden;
             }
           }
           .price_shop {
@@ -97,6 +103,7 @@
                 background-color: #87b106;
                 padding: 5px 10px;
                 border-radius: 5px;
+                cursor: pointer;
               }
             }
           }

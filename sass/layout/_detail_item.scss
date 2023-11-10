@@ -1,14 +1,31 @@
 .detail_item {
+  background: url(../../image/bg-new.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 80px;
   .demo_detail_vinh {
     .content_detail {
       display: flex;
       justify-content: space-around;
-      margin-top: 80px;
       @media screen and (max-width: 992px) {
         display: block;
       }
       .left_content {
         margin-right: 15px;
+        background-color: #eaeaea;
+        border-radius: 10px;
+        background-repeat: no-repeat;
+        &:hover img {
+          transform: scale(1.1);
+          cursor: pointer;
+          border-color: $color_green_1;
+          background-image: url(../../image/home2-slide2copy.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 20px;
+        }
         .img_top {
           @media screen and (max-width: 992px) {
             text-align: center;
@@ -16,9 +33,8 @@
           }
           img {
             width: 100%;
-            height: 500px;
-            background-color: #f3f3f3;
             border-top: 2px solid #e5e5e5;
+            transition: all 1s;
             @media screen and (max-width: 992px) {
               width: 100%;
             }
@@ -66,6 +82,12 @@
             border-radius: 10%;
             background-color: #eaeaea;
             font-size: $fs_3;
+            transition: all 0.5s;
+            &:hover {
+              transform: scale(1.1);
+              cursor: pointer;
+              background-color: $color_green_1;
+            }
           }
         }
         .description {
@@ -162,22 +184,24 @@
       }
     }
   }
-}
-.Description_detail {
-  @media screen and (max-width: 992px) {
-    padding: 0 100px;
-  }
-  .content_description {
-    text-align: center;
-    margin-top: 50px;
-    h3 {
-      font-weight: $fw_400;
-      color: green;
+  .Description_detail {
+    @media screen and (max-width: 992px) {
+      padding: 0 100px;
     }
-    p {
-      font-size: $fs_2;
-      border: 1px solid rgb(173, 168, 168);
-      padding: 15px;
+    .content_description {
+      text-align: center;
+      padding-top: 50px;
+      padding-bottom: 15px;
+
+      h3 {
+        font-weight: $fw_400;
+        color: green;
+      }
+      p {
+        font-size: $fs_2;
+        border: 1px solid rgb(173, 168, 168);
+        padding: 15px;
+      }
     }
   }
 }
