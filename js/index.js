@@ -66,3 +66,34 @@ function renderDataItem(arr) {
   }
   document.querySelector(".gallery_product-gallery").innerHTML = content;
 }
+
+// slick banner start
+
+$(".slick-track").slick({
+  slidesToShow: 1,
+  infinite: true,
+  slidesToScroll: 1,
+  accessbility: true,
+  dots: false,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+    },
+    480: {
+      items: 1,
+    },
+    667: {
+      items: 1,
+    },
+    1000: {
+      items: 1,
+    },
+  },
+});
+
+document.querySelector("button.slick-prev.slick-arrow").innerHTML = "";
+
+document.querySelector("button.slick-next.slick-arrow").innerHTML = "";
+
+// slick banner end

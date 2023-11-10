@@ -37,6 +37,22 @@
   max-width: 1200px;
 }
 
+@media only screen and (max-width: 767px) {
+  .section-padding {
+    padding: 63px 0 !important;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .shop-btn {
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .footer-widget-area {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+}
 .header-area .main-header .header-top {
   padding: 6px 0;
 }
