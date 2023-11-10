@@ -122,6 +122,9 @@ header .main-header .header-main-area .logo a img {
   transition: all 0.4s;
   vertical-align: middle;
 }
+header .main-header .header-main-area .main-menu-area {
+  margin-top: 15px;
+}
 header .main-header .header-main-area .main-menu-area .main-menu .desktop-menu ul {
   display: flex;
   flex-wrap: wrap;

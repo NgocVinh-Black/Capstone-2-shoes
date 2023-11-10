@@ -61,8 +61,8 @@
             z-index: 1;
 
             .logo {
-                height: 108px;
-                line-height: 108px;
+                height: 110px;
+                line-height: 110px;
                 margin-top: -39px;
                 padding: 0 15px;
                 background-color: $color_green_1;
@@ -70,6 +70,7 @@
             }
             
             .main-menu-area {
+                margin-top: 15px;
                 
                 .main-menu {
                     ul {

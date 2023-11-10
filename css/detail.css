@@ -99,12 +99,15 @@
   z-index: 1;
 }
 .header-area .main-header .header-main-area .logo {
-  height: 108px;
-  line-height: 108px;
+  height: 110px;
+  line-height: 110px;
   margin-top: -39px;
   padding: 0 15px;
   background-color: #87b106;
   text-align: center;
+}
+.header-area .main-header .header-main-area .main-menu-area {
+  margin-top: 15px;
 }
 .header-area .main-header .header-main-area .main-menu-area .main-menu ul {
   display: flex;
