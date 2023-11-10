@@ -1,5 +1,7 @@
 // header
 header {
+    display: block;
+
     &.header-transparent {
         top: 0;
         left: 0;
@@ -97,6 +99,8 @@ header {
             }
 
             .main-menu-area {
+                margin-top: 15px;
+
                 .main-menu {
                     .desktop-menu{
                         ul {
