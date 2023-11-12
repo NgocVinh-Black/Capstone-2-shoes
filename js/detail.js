@@ -119,7 +119,7 @@ function renderDataItem(arr) {
       <!-- call api -->
       <div class="item">
         <div class="item_top">
-          <img src="${item_SP.image}" alt="">
+        <a href="./../pages/detail.html?productid=${item_SP.id}"><img src="${item_SP.image}" alt=""></a>
         </div>
         <div class="product_group">
           <div class="name_item">
