@@ -1,10 +1,30 @@
 function registerUser() {
   const registrationForm = document.getElementById("registrationForm");
-  const email = registrationForm.querySelector("#email").value;
-  const password = registrationForm.querySelector("#password").value;
-  const name = registrationForm.querySelector("#name").value;
-  const gender = registrationForm.querySelector("#gender").value === "true";
-  const phone = registrationForm.querySelector("#phone").value;
+  const emailInput = registrationForm.querySelector("#email");
+  const passwordInput = registrationForm.querySelector("#password");
+  const repeatPasswordInput = registrationForm.querySelector("#repeatPassword");
+  const nameInput = registrationForm.querySelector("#name");
+  const genderInput = registrationForm.querySelector("#gender");
+  const phoneInput = registrationForm.querySelector("#phone");
+
+  // Validate input presence
+  if (
+    !isInputPresent(emailInput) ||
+    !isInputPresent(passwordInput) ||
+    !isInputPresent(repeatPasswordInput) ||
+    !isInputPresent(nameInput) ||
+    !isInputPresent(phoneInput)
+  ) {
+    showModal("Please fill in all fields.");
+    return;
+  }
+
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  const repeatPassword = repeatPasswordInput.value;
+  const name = nameInput.value;
+  const gender = genderInput.value === "true";
+  const phone = phoneInput.value;
 
   // Perform validation
   if (!validateEmail(email)) {
@@ -22,10 +42,13 @@ function registerUser() {
     return;
   }
 
+  if (password !== repeatPassword) {
+    showModal("Passwords do not match. Please enter matching passwords.");
+    return;
+  }
+
   if (!validatePhone(phone)) {
-    showModal(
-      "Invalid phone number - Phone number must contain only digits and be 10 characters long"
-    );
+    showModal("Invalid phone number - Phone number must contain only numbers");
     return;
   }
 
@@ -47,17 +70,54 @@ function registerUser() {
   promise
     .then(function (result) {
       const responseMessage = document.getElementById("responseMessage");
-      responseMessage.textContent = "Registration successful!";
-      console.log(result);
-      setTimeout(function () {
-        window.location.href = "../index.html";
-      }, 5000);
+      responseMessage.textContent = ""; // Clear existing content
+
+      if (result.status === 200) {
+        // Registration was successful
+        showModal("Registration successful!");
+        console.log(result);
+
+        // Reset the form fields
+        registrationForm.reset();
+
+        // Redirect or perform other actions here
+      } else {
+        // Handle other status codes if needed
+        console.error("Unexpected status code:", result.status);
+      }
     })
     .catch(function (error) {
+      // Handle errors
+      console.error("Registration error:", error.response.data);
       const responseMessage = document.getElementById("responseMessage");
-      responseMessage.textContent = "Registration failed. Please try again.";
-      console.log(error);
+      responseMessage.textContent = ""; // Clear existing content
+
+      if (error.response && error.response.data) {
+        const { statusCode, message } = error.response.data;
+
+        // Example: Display specific error messages based on server response
+        if (statusCode === 400 && message === "Email đã được sử dụng!") {
+          // Email is already in use
+          showModal(
+            "Email has already been used. Please use a different email."
+          );
+        } else {
+          // Other registration failure
+          // showModal(`Registration failed: ${message}`);
+          // For non-email-in-use errors, do not show the error modal
+        }
+      } else {
+        // General registration failure
+        showModal("Registration failed. Please try again.");
+      }
+
+      console.error("Registration error:", error.response.data);
     });
+}
+
+// Helper function to check if an input element has a value
+function isInputPresent(input) {
+  return input.value.trim() !== "";
 }
 
 function validateEmail(email) {
@@ -77,8 +137,8 @@ function validatePassword(password) {
 }
 
 function validatePhone(phone) {
-  // Basic phone number validation: must contain only digits and be 10 characters long
-  const phoneRegex = /^\d{10}$/;
+  // Basic phone number validation: must contain only digits
+  const phoneRegex = /^\d+$/;
   return phoneRegex.test(phone);
 }
 
