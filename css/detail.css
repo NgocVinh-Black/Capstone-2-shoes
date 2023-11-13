@@ -873,4 +873,33 @@
 }
 .black-bg .footer-bottom-area p {
   color: #888888;
+}
+
+button.movetop {
+  display: none;
+  position: fixed;
+  bottom: 60px;
+  right: 15px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  padding: 0;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  background: #87b106;
+  transition: 0.3s ease-out;
+}
+button.movetop span {
+  font-size: 13px;
+  font-style: normal;
+}
+button.movetop:hover {
+  transform: translate3d(0, -5px, 0);
+  transition: 0.3s ease-out;
 }/*# sourceMappingURL=detail.css.map */
